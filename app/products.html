@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+  <title>My Website</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container1">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <h1><span>Sky</span> Wings<span> Drone</span> Rentals</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="https://uavisdrone.com/app/index.html" data-after="Home">Home</a></li>
+            <li><a href="https://uavisdrone.com/app/services.html" data-after="Service">Services</a></li>
+            <!--<li><a href="https://uavisdrone.com/app/projects.html" data-after="Projects">Applications</a></li>-->
+            <li><a href="https://uavisdrone.com/app/products.html" data-after="About">Products</a></li>
+            <li><a href="https://uavisdrone.com/app/contacts.html" data-after="Contact">Contact</a></li>
+            <li><a href="https://uavisdrone.com/app/cart.php" class="cart-button"><img src="./../img/shopping-cart-icon.jpg" alt="Cart"></a></li>
+         </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="projects container">
+      <div class="projects-header">
+        <h1 class="section-title">Recent <span>Products</span></h1>
+      </div>
+      <div class="all-projects">
+        <div class="project-item">
+          <div class="project-info">
+            <h1>DJI Mavic 3 Pro</h1>
+            <h2>Inspiration in Focus</h2>
+            <p>The DJI Mavic 3 Series features next-level imaging performance. Mavic 3 Pro's triple-camera system ushers in a new era of camera drones by housing three sensors and lenses with different focal lengths. Equipped with a Hasselblad camera and dual tele cameras, Mavic 3 Pro is a triple-camera drone that unlocks new shooting perspectives, allowing you to embrace creative freedom further, capture fascinating scenery, explore photographic storytelling, and make cinematic masterpieces.</p>
+            <p>Price: $1000</p>
+            <div class="project-button">
+              <form method="POST" action="add_to_cart.php">
+                <input type="hidden" name="itemID" value=1>
+                <input type="hidden" name="itemName" value='DJI Mavic 3 Pro'>
+                <input type="hidden" name="Price" value=1000>
+                <input type="hidden" name="Quantity" value=1>
+                <input type="submit" class="button" name="add_to_cart" value="Add to Cart">
+              </form>
+            </div>
+          </div>
+          <div class="project-img">
+            <img src="./../img/DJIMavic3Pro.jpeg" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>DJI MINI 3 PRO</h1>
+            <h2>Fly Mini, Create Big</h2>
+            <p>The mini-sized, mega-capable DJI Mini 3 Pro is just as powerful as it is portable. Weighing less than 249 g and with upgraded safety features, it's not only regulation-friendly, it's also the safest in its series. [1] With a 1/1.3-inch sensor and top-tier features, it redefines what it means to fly Mini.</p>
+            <p>Price: $800</p>
+            <div class="project-button">
+              <form method="POST" action="add_to_cart.php">
+                <input type="hidden" name="itemID" value=2>
+                <input type="hidden" name="itemName" value='DJI MINI 3 PRO'>
+                <input type="hidden" name="Price" value=800>
+                <input type="hidden" name="Quantity" value=1>
+                <input type="submit" class="button" name="add_to_cart" value="Add to Cart">
+              </form>
+            </div>
+          </div>
+          <div class="project-img">
+            <img src="./../img/Mavic-Mini-3.jpeg" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>DJI Air 2S</h1>
+            <h2>All In One</h2>
+            <p>Featuring a 1-inch CMOS sensor, powerful automatic functions, and a compact body weighing less than 600 g, DJI Air 2S is the ultimate drone for creators on the move. Take this all-in-one aerial powerhouse along anywhere to experience and record your world in stunning detail.</p>
+            <p>Price: $750</p>
+            <div class="project-button">
+              <form method="POST" action="add_to_cart.php">
+                <input type="hidden" name="itemID" value=3>
+                <input type="hidden" name="itemName" value='DJI Air 2S'>
+                <input type="hidden" name="Price" value=750>
+                <input type="hidden" name="Quantity" value=1>
+                <input type="submit" class="button" name="add_to_cart" value="Add to Cart">
+              </form>
+            </div>
+          </div>
+          <div class="project-img">
+            <img src="./../img/DJIAir2S.png" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>DJI AVATA</h1>
+            <h2>Born to Fly</h2>
+            <p>Compact and lightweight, DJI Avata is nimble in tight spaces. Every aspect of its design was made for you to be bold. The built-in propeller guard means that if Avata comes in contact with an object, it can bounce back, stay in the air, and can keep on flying.</p>
+            <p>Price: $945</p>
+            <div class="project-button">
+              <form method="POST" action="add_to_cart.php">
+                <input type="hidden" name="itemID" value=4>
+                <input type="hidden" name="itemName" value='DJI AVATA'>
+                <input type="hidden" name="Price" value=945>
+                <input type="hidden" name="Quantity" value=1>
+                <input type="submit" class="button" name="add_to_cart" value="Add to Cart">
+              </form>
+            </div>
+          </div>
+          <div class="project-img">
+            <img src="./../img/DJI-Avata.png" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>DJI MAVIC AIR 2</h1>
+            <h2>Up Your Game</h2>
+            <p>Mavic Air 2 takes power and portability to the next level, offering advanced features in a compact form factor. Intelligent shooting functions and excellent image quality put aerial masterpieces within reach. Safer, smarter flight enables you to up your game while fully enjoying the creative process.</p>
+            <p>Price: $675</p>
+            <div class="project-button">
+              <form method="POST" action="add_to_cart.php">
+                <input type="hidden" name="itemID" value=5>
+                <input type="hidden" name="itemName" value='DJI MAVIC AIR 2'>
+                <input type="hidden" name="Price" value=675>
+                <input type="hidden" name="Quantity" value=1>
+                <input type="submit" class="button" name="add_to_cart" value="Add to Cart">
+              </form>
+            </div>
+          </div>
+          <div class="project-img">
+            <img src="./../img/dji-mavic-air-2.jpeg" alt="img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Projects Section -->
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand">
+        <h1><span>Sky</span> Wings<span> Drone</span> Rentals</h1>
+      </div>
+      <h2>Your Complete Web Solution</h2>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><i class="fab fa-twitter fa-4x"></i></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/behance.png" /></a>
+        </div>
+      </div>
+      <p>Copyright © 2023 SkyWingsDroneRentals. All rights reserved</p>
+    </div>
+  </section>
+  <!-- End Footer -->
+  <script src="./app.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script>
+    // Get the current URL
+    var currentURL = window.location.href;
+    console.log(currentURL);
+    $.ajax({
+      url: '../save_history.php',
+      type: 'POST',
+      data: {
+        action: 'callFunction',
+        url: currentURL
+      },
+      success: function(response) {
+        // Handle the response from the PHP script
+        console.log('Result:', response);
+      },
+      error: function(xhr, status, error) {
+        // Handle the error
+        console.error('Error:', error);
+      }
+    });
+  </script>
+</body>
+
+</html>

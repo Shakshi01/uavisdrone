@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+  <title>My Website</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container1">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <h1><span>Sky</span> Wings<span> Drone</span> Rentals</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="https://uavisdrone.com/app/index.html" data-after="Home">Home</a></li>
+            <li><a href="https://uavisdrone.com/app/services.html" data-after="Service">Services</a></li>
+            <!--<li><a href="https://uavisdrone.com/app/projects.html" data-after="Projects">Applications</a></li>-->
+            <li><a href="https://uavisdrone.com/app/products.html" data-after="Products">Products</a></li>
+            <li><a href="https://uavisdrone.com/app/contacts.html" data-after="Contact">Contact</a></li>
+            <li><a href="https://uavisdrone.com/app/cart.php" class="cart-button"><img src="./../img/shopping-cart-icon.jpg" alt="Cart"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="./../img/Shakshi.jpg" alt="img">
+        </div>
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">About <span>Us</span>:</h1>
+        <h2>Sky<span> Wings</span> Drone<span> Rentals</span></h2>
+        <p>Welcome to our Website! We are passionate about drones and the endless possibilities they offer. Our mission is to provide an exceptional drone rental experience, empowering individuals and businesses to explore the skies and unleash their creativity. With a team of dedicated experts, we strive to deliver top-quality equipment, reliable support, and a seamless user experience. Join us on this exciting journey as we revolutionize the way people engage with drones and embrace the boundless opportunities they bring.</p>
+        <a href="#" class="cta">Learn More</a>
+      </div>
+    </div>
+  </section>
+  <!-- End About Section -->
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand">
+        <h1><span>Sky</span> Wings<span> Drone</span> Rentals</h1>
+      </div>
+      <h2>Your Complete Web Solution</h2>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><i class="fab fa-twitter fa-4x"></i></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/behance.png" /></a>
+        </div>
+      </div>
+      <p>Copyright © 2023 SkyWingsDroneRentals. All rights reserved</p>
+    </div>
+  </section>
+  <!-- End Footer -->
+  <script src="./app.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script>
+    // Get the current URL
+    var currentURL = window.location.href;
+    console.log(currentURL);
+    $.ajax({
+      url: '../save_history.php',
+      type: 'POST',
+      data: {
+        action: 'callFunction',
+        url: currentURL
+      },
+      success: function(response) {
+        // Handle the response from the PHP script
+        console.log('Result:', response);
+      },
+      error: function(xhr, status, error) {
+        // Handle the error
+        console.error('Error:', error);
+      }
+    });
+  </script>
+</body>
+
+</html>

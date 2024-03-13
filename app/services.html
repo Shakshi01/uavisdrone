@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+  <title>My Website</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container1">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <h1><span>Sky</span> Wings<span> Drone</span> Rentals</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="https://uavisdrone.com/app/index.html" data-after="Home">Home</a></li>
+            <li><a href="https://uavisdrone.com/app/services.html" data-after="Service">Services</a></li>
+            <!--<li><a href="https://uavisdrone.com/app/projects.html" data-after="Projects">Applications</a></li>-->
+            <li><a href="https://uavisdrone.com/app/products.html" data-after="Products">Products</a></li>
+            <li><a href="https://uavisdrone.com/app/contacts.html" data-after="Contact">Contact</a></li>
+            <li><a href="https://uavisdrone.com/app/cart.php" class="cart-button"><img src="./../img/shopping-cart-icon.jpg" alt="Cart"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+  <!-- Service Section -->
+  <section id="services">
+    <div class="services container">
+      <div class="service-top">
+        <h1 class="section-title">Serv<span>i</span>ces</h1>
+        <p>Experience the thrill of flight and unlock a world of possibilities with our Drone Rental Marketplace. Whether you're a passionate aerial photographer, an adventure seeker, or a business looking to elevate your operations, our platform offers a gateway to the skies. From state-of-the-art drone models to seamless booking and exceptional customer support, we provide the tools and expertise to turn your aerial visions into reality. Soar to new heights and embark on a captivating journey with our premier drone rental services.</p>
+      </div>
+      <div class="service-bottom">
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+          <h2>Drone Rental</h2>
+          <p>Experience the thrill of flight without the commitment of ownership through our convenient drone rental service. Choose from a wide selection of top-quality drones suitable for various applications, including photography, videography, surveying, and more.</p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+          <h2>Drone Accessories</h2>
+          <p>Elevate your drone rental experience with our high-quality accessories. From spare batteries to carrying cases, our comprehensive selection complements and optimizes your drone usage. Explore our collection and unlock the full potential of your rental with top-notch accessories.</p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+          <h2>Drone Training</h2>
+          <p>Become a skilled drone pilot with our comprehensive training. Learn safe and responsible drone operation, master flight controls, and gain confidence in handling your rental. Our expert instructors provide sessions suitable for beginners and those looking to refine their skills, empowering you to navigate the skies with ease.</p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+          <h2>Drone Repairs</h2>
+          <p>In the unfortunate event of any damages or technical issues with your rental drone, our expert technicians are here to help.With our skilled team and efficient repair process, you can trust us to handle repairs with precision and get you back in the air as quickly as possible. Rent with confidence, knowing that our reliable repair services have got you covered. </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Service Section -->
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand">
+        <h1><span>Sky</span> Wings<span> Drone</span> Rentals</h1>
+      </div>
+      <h2>Your Complete Web Solution</h2>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><i class="fab fa-twitter fa-4x"></i></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/behance.png" /></a>
+        </div>
+      </div>
+      <p>Copyright © 2023 SkyWingsDroneRentals. All rights reserved</p>
+    </div>
+  </section>
+  <!-- End Footer -->
+  <script src="./app.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script>
+    // Get the current URL
+    var currentURL = window.location.href;
+    console.log(currentURL);
+    $.ajax({
+      url: '../save_history.php',
+      type: 'POST',
+      data: {
+        action: 'callFunction',
+        url: currentURL
+      },
+      success: function(response) {
+        // Handle the response from the PHP script
+        console.log('Result:', response);
+      },
+      error: function(xhr, status, error) {
+        // Handle the error
+        console.error('Error:', error);
+      }
+    });
+  </script>
+</body>
+
+</html>

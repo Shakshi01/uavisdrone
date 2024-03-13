@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+  <title>My Website</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container1">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <h1><span>Sky</span> Wings<span> Drone</span> Rentals</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="https://uavisdrone.com/app/index.html" data-after="Home">Home</a></li>
+            <li><a href="https://uavisdrone.com/app/services.html" data-after="Service">Services</a></li>
+            <!--<li><a href="https://uavisdrone.com/app/projects.html" data-after="Projects">Applications</a></li>-->
+            <li><a href="https://uavisdrone.com/app/products.html" data-after="Products">Products</a></li>
+            <li><a href="https://uavisdrone.com/app/contacts.html" data-after="Contact">Contact</a></li>
+            <li><a href="https://uavisdrone.com/app/cart.php" class="cart-button"><img src="./../img/shopping-cart-icon.jpg" alt="Cart"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="projects container">
+      <div class="projects-header">
+        <h1 class="section-title">Recent <span>Applications</span></h1>
+      </div>
+      <div class="all-projects">
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Aerial Photography and Videography</h1>
+            <h2>Unveiling the Beauty of the Skies</h2><br>
+            <p>Aerial photography and videography provide a breathtaking perspective, capturing awe-inspiring images and footage from the sky. With the use of drones, you can effortlessly reach new heights and unlock creative possibilities. Elevate your photography and videography game with the transformative power of aerial perspectives.</p>
+          </div>
+          <div class="project-img">
+            <img src="./../img/ArialPhotography.jpg" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Search and Rescue Operations</h1>
+            <h2>Saving Lives from Above</h2><br>
+            <p>Drones revolutionize search and rescue operations, enabling efficient and precise missions. With aerial capabilities and advanced imaging systems, drones offer real-time situational awareness and enhance visibility in challenging environments. They cover large areas swiftly, locate missing persons, assess disaster areas, and deliver supplies to remote locations. By integrating drones, search and rescue teams save lives and provide critical support in the most demanding situations.</p>
+          </div>
+          <div class="project-img">
+            <img src="./../img/rescue-drone.jpg" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Agriculture and Crop Monitoring application </h1>
+            <h2>Transforming Agriculture</h2><br>
+            <p>Improve agricultural practices with the power of drone technology. Utilizing drones for crop monitoring allows for precise and timely data collection, optimizing irrigation, fertilization, and pest control. By providing aerial insights, drones enable farmers to make informed decisions and maximize crop yields while minimizing resources and environmental impact.</p>
+          </div>
+          <div class="project-img">
+            <img src="./../img/Agriculture.jpg" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Mapping, Surveying, and GIS</h1>
+            <h2>Precision from the Skies</h2><br>
+            <p>Unlock the potential of mapping, surveying, and Geographic Information Systems (GIS) with drone technology. Drones offer efficient and accurate data collection, enabling high-resolution aerial mapping and precise surveying for various industries.</p>
+          </div>
+          <div class="project-img">
+            <img src="./../img/drone-mapping.jpg" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Event Coverage and Documentation</h1>
+            <h2>From Above the Crowd</h2><br>
+            <p>Capture unforgettable moments and elevate event coverage with drone technology. Drones offer a unique perspective, allowing for dynamic aerial shots, sweeping panoramas, and immersive footage of concerts, weddings, sports events, and more. From capturing the grandeur of the venue to documenting the energy and emotions of the occasion and showcase memorable events!</p>
+          </div>
+          <div class="project-img">
+            <img src="./../img/WeddingPhotography.jpg" alt="img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Projects Section -->
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand">
+        <h1><span>Sky</span> Wings<span> Drone</span> Rentals</h1>
+      </div>
+      <h2>Your Complete Web Solution</h2>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><i class="fab fa-twitter fa-4x"></i></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/behance.png" /></a>
+        </div>
+      </div>
+      <p>Copyright © 2023 SkyWingsDroneRentals. All rights reserved</p>
+    </div>
+  </section>
+  <!-- End Footer -->
+  <script src="./app.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script>
+    // Get the current URL
+    var currentURL = window.location.href;
+    console.log(currentURL);
+    $.ajax({
+      url: '../save_history.php',
+      type: 'POST',
+      data: {
+        action: 'callFunction',
+        url: currentURL
+      },
+      success: function(response) {
+        // Handle the response from the PHP script
+        console.log('Result:', response);
+      },
+      error: function(xhr, status, error) {
+        // Handle the error
+        console.error('Error:', error);
+      }
+    });
+  </script>
+</body>
+
+</html>

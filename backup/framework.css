@@ -1,0 +1,61 @@
+/* Reset some default browser styles */
+html, body, h1, h2, h3, h4, h5, h6, p, ul, li, img, a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    font-size: 100%;
+}
+
+/* Basic styling for container elements */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Basic styling for navigation menu */
+.nav-menu {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+.nav-menu li a {
+    color: black;
+    padding: 1rem;
+}
+.nav-menu li a:hover {
+    color: blue;
+}
+
+/* Sticky header */
+.sticky-header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Basic styles for sections */
+section {
+    padding: 2rem 0;
+}
+
+/* Basic styles for headings */
+h1, h2 {
+    color: black;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+  .nav-menu {
+    flex-direction: column;
+  }
+}

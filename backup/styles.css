@@ -1,0 +1,165 @@
+/* Custom styles for the home.php design pattern */
+
+/* New classes */
+.gb-headline {
+    font-size: 1.5rem;
+}
+
+.gb-headline-4cc5acfe {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.gb-headline-text {
+    color: #333;
+}
+
+.gb-inside-container {
+    padding: 1rem;
+}
+
+.inside-header {
+    background-color: #f8f8f8;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.gb-container-a6e9c368 {
+    background-image: url('https://uavisdrone.com/pages/img.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+/* End of new classes */
+
+/* Hero section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    text-align: center;
+}
+
+/* Services section */
+.services {
+    background-color: white;
+}
+.service-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1rem;
+}
+.service-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+}
+.service-block:hover {
+    transform: translateY(-5px);
+}
+.service-icon {
+    font-size: 3rem;
+    color: blue;
+    margin-bottom: 1rem;
+}
+.service-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+.service-description {
+    text-align: center;
+}
+
+/* About section */
+.about {
+    background-color: #f8f8f8;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Add keyframe animations for icons */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.animated-icon {
+  animation: pulse 1.5s infinite;
+}
+/* ... */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay to make the background image dull */
+}
+
+/* Logo */
+.logo {
+    max-width: 200px;
+    margin-bottom: 1rem;
+}
+
+/* Menu items */
+.nav-menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.nav-menu a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.nav-menu a:hover {
+    color: blue;
+}
+
+/* Hero content */
+.hero-content {
+    z-index: 2;
+    position: relative;
+}
+
+/* Dull background image */
+.gb-container-a6e9c368::before {
+    content: '';
+    background-image: url('path/to/your/hero-background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    z-index: -1;
+}
+/* ... */
+

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Drawing a Dog Face on the Canvas</title>
+<style>
+	canvas {
+		border: 1px solid #000;
+	}
+</style>
+<script>
+    window.onload = function() {
+        var canvas = document.getElementById("myCanvas");
+        var context = canvas.getContext("2d");
+      
+        context.arc(200,200,60,0,2*Math.PI);
+		context.stroke();
+      
+      	context.beginPath();
+		context.arc(172,200,15,0,2*Math.PI);
+		context.stroke();
+//eyes
+		context.beginPath();
+		context.arc(172,200,7,0,2*Math.PI);
+     // context.fillStyle = "#FB8B89";
+        context.fill();
+		context.stroke();
+      
+      context.beginPath();
+context.arc(228,200,15,0,2*Math.PI);
+context.stroke();
+
+context.beginPath();
+context.arc(228,200,7,0,2*Math.PI);
+      //context.fillStyle = "#FB8B89";
+        context.fill();
+context.stroke();
+      
+      context.beginPath();
+context.moveTo(180, 143);  //moves right point(right, down)
+context.bezierCurveTo(150,50,120,80,140,190);
+context.stroke();
+  //ear
+  context.beginPath();
+context.moveTo(168, 150);  //moves right point(right, down)
+context.bezierCurveTo(150,100,140,80,150,166);
+      context.fillStyle = "#FB8B89";
+        context.fill();
+context.stroke();
+      
+      context.beginPath();
+context.moveTo(257, 180);  //moves right point(right, down)
+context.bezierCurveTo(270,50,220,80,210,140);
+context.stroke();
+  //ear
+context.beginPath();
+context.moveTo(245, 160);  //moves right point(right, down)
+context.bezierCurveTo(250,70,240,100,220,143);
+      context.fillStyle = "#FB8B89";
+        context.fill();
+context.stroke();
+      
+        context.beginPath();
+  context.arc(200,217,9,0, 2*Math.PI);
+      context.fillStyle = "#FB8B89";
+        context.fill();
+  context.stroke();
+      
+        context.beginPath();
+  context.arc(200,235,19,0, Math.PI);
+  context.lineTo(219, 235);
+      context.fillStyle = "#FB8B89";
+        context.fill();
+  context.stroke();
+   
+ context.beginPath();
+  context.moveTo(215, 247);
+  context.bezierCurveTo(215, 240,180,240, 185, 247); 
+      context.fillStyle = "#FB8B89";
+        context.fill();
+  context.stroke();
+      
+      
+      //body
+      
+            context.beginPath();
+context.moveTo(259, 160);  //moves right point(right, down)
+context.bezierCurveTo(580,160,330,330,210,260);
+context.stroke();
+      
+      
+      //tail
+      
+       context.beginPath();
+context.moveTo(398, 180);  //moves right point(right, down)
+context.bezierCurveTo(500,180,540,330,398,180);
+context.fillStyle = "#FB8B89";
+        context.fill();
+context.stroke();
+      
+      //context.beginPath();
+//context.moveTo(388, 180);  //moves right point(right, down)
+//context.bezierCurveTo(600,230,440,350,346,190);
+//context.stroke();
+      
+      
+      //second legs
+      context.beginPath();
+context.moveTo(263, 278);  //moves right point(right, down)
+context.bezierCurveTo(298,250,256,390,266,275);
+context.fillStyle = "#FB8B89";
+        context.fill();
+context.stroke();
+      
+      //first leg
+      context.beginPath();
+context.moveTo(230, 283);  //moves right point(right, down)
+context.bezierCurveTo(238,230,216,370,216,262);
+context.fillStyle = "#FB8B89";
+        context.fill();
+context.stroke();
+      
+      //4th leg
+       context.beginPath();
+context.moveTo(348, 285);  //moves right point(right, down)
+context.bezierCurveTo(318,237,400,355,326,270);
+context.fillStyle = "#FB8B89";
+        context.fill();
+context.stroke();
+      
+      //3rd leg
+      context.beginPath();
+context.moveTo(310, 273);  //moves right point(right, down)
+context.bezierCurveTo(318,337,296,318,300,274);
+      context.fillStyle = "#FB8B89";
+        context.fill();
+context.stroke();
+      
+  
+    };
+
+
+</script>
+</head>
+<body>
+    <canvas id="myCanvas" width="600" height="400"></canvas>
+</body>
+</html>
