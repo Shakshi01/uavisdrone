@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style1.css">
+  <title>Marketplace Website</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container1">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="https://uavisdrone.com/marketplace.html">
+            <h1><span>Welcome to Market Place</span></h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="https://uavisdrone.com/top_product.php" data-after="Index">Top Products</a></li>
+            <li><a href="https://uavisdrone.com/history.html" data-after="Service">History</a></li>
+            <li><a href="https://uavisdrone.com/review_marketplace.php" data-after="Products">Reviews</a></li>
+            <li><a href="https://uavisdrone.com" data-after="Contact">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="contact container">
+  
+        <div class="contact-item">
+          <video width="200" height="300" autoplay loop muted onclick="window.location='https://uavisdrone.com/app/index.html'">
+            <source src="drone_rental.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <div class="contact-info">
+            <a href="app/index.html"><h1>Drone Rental</h1></a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <video width="200" height="300" autoplay loop muted onclick="window.location='https://reshma.host272.com'">
+      			<source src="fitness_icon.mp4" type="video/mp4">
+      			Your browser does not support the video tag.
+    			</video>
+          <div class="contact-info">
+            <a href="https://reshma.host272.com"><h1>FitZone</h1></a>
+           </div>
+        </div>
+        <div class="contact-item">
+          <video width="200" height="300" autoplay loop muted onclick="window.location='https://e-learning.host272.com/'">
+      			<source src="siva.mp4" type="video/mp4">
+      			Your browser does not support the video tag.
+    			</video>
+          <div class="contact-info">
+            <a href="https://e-learning.host272.com/"><h1>Think Outside The Box</h1></a>
+          </div>
+        </div>
+      	<div class="contact-item">
+          <video width="200" height="300" autoplay loop muted onclick="window.location='https://srikar.host272.com/'">
+      			<source src="srikar_video_icon.mp4" type="video/mp4">
+      			Your browser does not support the video tag.
+    			</video>
+          <div class="contact-info">
+            <a href="https://srikar.host272.com/"><h1>Premium Car Rentals</h1></a>
+          </div>
+        </div> 
+    </div>
+  </section>
+  <!-- End Contact Section -->
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand">
+         <h1><span>Welcome to Market Place</span> </h1>
+      </div>
+      <h2>Your Complete Web Solution</h2>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/behance.png" /></a>
+        </div>
+      </div>
+      <p>Copyright © 2023 MarketPlace. All rights reserved</p>
+    </div>
+  </section>
+  <!-- End Footer -->
+  <script src="./app.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script>
+    // Get the current URL
+    var currentURL = window.location.href;
+    console.log(currentURL);
+    $.ajax({
+      url: 'save_history.php',
+      type: 'POST',
+      data: {
+        action: 'callFunction',
+        url: currentURL
+      },
+      success: function(response) {
+        // Handle the response from the PHP script
+        console.log('Result:', response);
+      },
+      error: function(xhr, status, error) {
+        // Handle the error
+        console.error('Error:', error);
+      }
+    });
+  </script>
+</body>
+
+</html>
